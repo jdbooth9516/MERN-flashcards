@@ -1,0 +1,47 @@
+// GET ALL CATEGORIES
+GET http://localhost:5000/api/categories HTTP/1.1
+
+
+// CREATE A NEW CATEGORY
+### 
+POST http://localhost:5000/api/categories HTTP/1.1
+content-type: application/json 
+
+{
+    "name": "General"
+}
+
+// UPDATE THE CATEGORY
+###
+PUT http://localhost:5000/api/categories/60e7412670425b9a10c1839e HTTP/1.1
+content-type: application/json 
+
+ {
+    "name": "Japanese",
+    "totalCards" : 2
+}
+
+###
+// GET ALL THE FLASHCARDS
+GET  http://localhost:5000/api/flashcards HTTP/1.1
+
+
+###
+// CREATE A NEW FLASHCARD
+POST http://localhost:5000/api/flashcards HTTP/1.1
+content-type: application/json 
+
+{
+    "question": "is the sky blue",
+    "answer": "yes",
+    "categoryName": "General"
+}
+
+###
+// GET ONLY THE FLASHCARDS THAT BELONG TO A CERTAIN CATEGORY
+GET http://localhost:5000/api/flashcards/Japanese HTTP/1.1
+
+### 
+///GET A SINGLE CARD BASED OFF OF CATEGORY
+GET http://localhost:5000/api/flashcards/Japanese/60e755373624d0b25a2eb3e4 HTTP/1.1
+
