@@ -1,0 +1,86 @@
+
+.big-Modal { 
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    min-height: 50vh;
+    min-width: 70vw;
+    color: aliceblue;
+    background-color: rgba(110, 110, 110, 0.37);
+    border-radius: 3px;
+    box-shadow: rgb(0, 0, 0) 0 0 .5em 0;
+    z-index: 9000;
+}
+
+
+.cards{ 
+    min-height: 15vh;
+    flex: 0 1 calc(33% - 0.5em);
+    background-color: aliceblue;
+    color:rgb(49, 49, 49);
+    border-radius: 2px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 2vh;
+    padding-top: 3vh;
+    box-shadow: rgb(134, 134, 134) .1em .2em .5em 0;
+}
+
+.card-tile { 
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    margin: 1vh 1vw;
+}
+
+.card-title { 
+    padding-top: 1vh;
+}
+
+.single-body { 
+    display: flex; 
+    flex-direction: row;
+}
+
+.single-card { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 10vh 0 0 0;
+}
+
+.index-btn  {
+    border: 0;
+    color: aliceblue;
+    background-color: rgba(97, 97, 97, 0);
+    margin-top: 12vh;
+    font-size: 1em;
+}
+
+.singleModal-btn { 
+    margin: 0.5vh 0 0 0.5vh;
+    box-shadow: rgb(22, 22, 22) 0 0 .3em 0
+}
+
+.del-btn { 
+    padding: 5px 7px;
+    border: 0;
+    border-radius: 50%;
+    font-size: .8em;
+    color: aliceblue;
+    background-color: rgb(253, 41, 41);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .cards{
+        flex: 0 1 calc(100% - 1em);
+    }
+
+    .single-card { 
+        flex-direction: column;
+    }
+    
+}

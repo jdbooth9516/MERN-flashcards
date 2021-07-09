@@ -1,0 +1,70 @@
+input {
+    margin: 3px 0;
+}
+
+.Modal { 
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+    min-height: fit-content;
+    min-width: auto;
+    color: aliceblue;
+    background-color: rgba(54, 54, 54, 0.678);
+    border-radius: 3px;
+    box-shadow: rgb(0, 0, 0) 0 0 .5em 0;
+}
+.Overlay{
+    position: fixed;
+    top:0;
+    bottom: 0; 
+    right:0; 
+    left:0;
+    background-color: rgba(88, 88, 88, 0.692);
+}
+
+
+.createcard-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-btn { 
+   margin-left: auto;
+   margin-right: 1vw;
+   margin-top: 1vh;
+   box-shadow: rgb(29, 29, 29) 0 0 .5em 0;
+}
+.title { 
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.description{
+    margin: 0 1vw 0 1vw;
+}
+
+.create-form { 
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    margin-left: 20%;
+}
+
+.list { 
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.create-submit { 
+    border: 0;
+    background-color: greenyellow;
+    min-height: 3vh;
+    min-width: 5vw;
+    max-width: 10vw;
+    margin: 2vh 0 2vh 5vw;
+    border-radius: 5px;
+    box-shadow: rgb(22, 22, 22) 0 0 .5em 0;
+
+}

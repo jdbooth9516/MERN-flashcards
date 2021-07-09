@@ -29,15 +29,16 @@ router.post("/", (req, res) => {
 // @desc update a existing category
 // @access Public
 
-router.put("/:id", (req, res) => {
-  const updatedCategory = req.body;
-  Category.findById(req.params.id)
-    .then((category) => {
-      category.name = updatedCategory.name,
-      category.totalCards = updatedCategory.totalCards, 
-      res.json(category)
-    })
-    .catch((err) => console.log(err));
+router.put("/:name", async (req, res) => {
+  let category = await Category.find({ name: req.params.name });
+  console.log(category[0])
+  category = Category.findByIdAndUpdate({ _id: category[0]._id }, req.body).then(() => {
+    const updatedCategory = Category.findOne({_id: category._id}).then(() => {
+    }).catch((err) => console.log(err));
+    console.log(updatedCategory)
+    res.json(updatedCategory)
+  })
 });
+
 
 module.exports = router;

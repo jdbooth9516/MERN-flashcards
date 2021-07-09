@@ -1,0 +1,32 @@
+.CC-container { 
+    display: flex;
+    flex-direction: column;
+}
+
+.CCModal-btn { 
+    margin: .5vh .5vw 0 auto;
+    box-shadow: rgb(22, 22, 22) 0 0 .5em 0
+}
+
+.CC-title { 
+    margin: 1vh 15% 1vh 15%; 
+}
+
+
+.CC-form { 
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+}
+
+
+.CC-submit { 
+    border: 0;
+    background-color: greenyellow;
+    min-height: 3vh;
+    min-width: 5vw;
+    max-width: 10vw;
+    margin: 2vh 0 2vh 4vw;
+    border-radius: 5px;
+    box-shadow: rgb(22, 22, 22) 0 0 .5em 0;
+}

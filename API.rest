@@ -13,12 +13,12 @@ content-type: application/json
 
 // UPDATE THE CATEGORY
 ###
-PUT http://localhost:5000/api/categories/60e7412670425b9a10c1839e HTTP/1.1
+PUT http://localhost:5000/api/categories/General HTTP/1.1
 content-type: application/json 
 
  {
-    "name": "Japanese",
-    "totalCards" : 2
+    "name": "General",
+    "totalCards": 3
 }
 
 ###

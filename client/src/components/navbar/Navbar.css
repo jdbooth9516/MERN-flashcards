@@ -1,0 +1,25 @@
+button { 
+    margin-left: 1vw;
+}
+
+.navbar-inner { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logo { 
+    margin-left: 2vw;
+}
+
+.buttons { 
+    margin-left: 2vw;
+}
+
+.nav-btn { 
+    border: 0;
+    background-color: rgb(36, 36, 36);
+    color: rgb(0, 217, 255);
+    font-size: 1.3em;
+}
+

@@ -1,0 +1,39 @@
+.card-body {
+    display: flex; 
+    flex-direction: column;
+    color: rgb(49, 49, 49);
+    background-color: aliceblue;
+    min-height: 25vh;
+    min-width: 55vh;
+    margin: 0 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-options { 
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.singleModal-btn { 
+    margin: 0 0 0 auto;
+}
+
+.delete-btn { 
+    background-color: red;
+    color: aliceblue;
+    border: 0;
+    margin-top: 2vh;
+    border-radius: 2px;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .card-body { 
+        margin-top: 1vh;
+    }
+}

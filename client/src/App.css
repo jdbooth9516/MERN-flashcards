@@ -1,0 +1,13 @@
+.App {
+  height: 80vh;
+  width: 95vw;
+  color:aliceblue;
+  text-align: center;
+}
+
+
+.navbar-outer { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
